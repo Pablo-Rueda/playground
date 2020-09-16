@@ -16,7 +16,7 @@ After learning the fundamentals of JavaScript, I started building some basic pra
 https://peivol-dot-r.github.io/playground/002_JS_Calculator    
 ### Pomodoro CountDown Clock:    
 https://peivol-dot-r.github.io/playground/003_JS_Pomodoro   
-### Pomodoro CountDown Clock:     
+### To Do List:     
 https://peivol-dot-r.github.io/playground/004_JS_ToDoList    
 
 ## Materialize Web page:   
