@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Viewport browser optimized-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe Psychology</title>
+    <style>
+    .mainSection{
+        margin-top:0px;
+        background: url("https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+        background-size: cover;
+        background-position: center;
+        min-height: 500px;
+    }
+    .map {
+      height: 500px;
+      width: 100%;
+    }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <!-- NavBar -->
+        <div class="navbar-fixed">
+            <nav class="nav-wrapper purple lighten-1">
+                <div class="container">
+                    <a href="#about" class="hide-on-med-and-down">John Doe</a>
+                    <a href="#services" class="brand-logo center">Psychologist</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#map" class="tooltipped btn-floating btn-small teal accent-4"> 
+                            <i class="material-icons">map</i>
+                        </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+            <ul class="sidenav" id="mobile-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+    </header>
+<!-- Image -->
+    <section class="section scrollspy mainSection"></section>
+<!-- About -->
+    <section id="about" class="section container scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="purple-text text-darken-3">About me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        <p>Mauris dolor augue, vulputate in pharetra ac, facilisis nec libero. Fusce condimentum gravida urna, vitae scelerisque erat ornare nec.</p>
+      </div>
+            <!-- tabs -->
+      <div id="tabsID" class="col s12 l6 offset-l2">
+            <ul class="tabs">
+            <li class="tab col s6">
+                <a href="#experience" class="active purple-text text-darken-4">Experience</a>
+            </li>
+            <li class="tab col s6">
+                <a href="#education" class="purple-text text-darken-4">Education</a>
+            </li>
+            </ul>
+            <div id="experience" class="col s12">
+                <p class="flow-text purple-text text-darken-4">Experience</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet quo ipsam necessitatibus veritatis magni?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima consequatur cumque unde vitae ad, esse culpa id tempore! Sunt, sed.</p>
+            </div>
+            <div id="education" class="col s12">
+                <p class="flow-text purple-text text-darken-4">Education</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur accusamus iusto repellendus, voluptatum architecto optio nostrum!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem quisquam, provident aspernatur maxime mollitia facere incidunt unde?</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Services section-->
+<section id="services" class="section grey lighten-4 center">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card-panel">
+                        <i class="material-icons large purple-text text-darken-3">psychology</i>
+                        <h5 class="purple-text text-darken-3">Cognitive Therapy</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur consequatur esse blanditiis totam unde facilis voluptate commodi vero laboriosam.</p>                        
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel">
+                        <i class="material-icons large purple-text text-darken-3">directions_run</i>
+                        <h5 class="purple-text text-darken-3">Behavioural Therapy</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur consequatur esse blanditiis totam unde facilis voluptate commodi vero laboriosam.</p>                        
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel">
+                    <i class="material-icons large purple-text text-darken-3">self_improvement</i>
+                    <h5 class="purple-text text-darken-3">Humanist Therapy</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum consectetur consequatur esse blanditiis totam unde facilis voluptate commodi vero laboriosam.</p>                        
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Social sites section-->
+<section class="section purple lighten-1">
+    <div class="container">
+        <div class="row hide-on-med-and-down">
+            <div class="col s12 m12 l3 center">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook medium white-text"></i></a>
+            </div>
+            <div class="col s12 m12 l3 center">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter medium white-text"></i></a>
+            </div>
+            <div class="col s12 m12 l3 center">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram medium white-text"></i></a>
+            </div>
+            <div class="col s12 m12 l3 center">
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube medium white-text"></i></a>
+            </div> 
+        </div>
+    </div>
+</section>
+<!-- Contact us section-->
+<section id="contact" class="section grey lighten-4 center">
+    <div class="container">
+        <!-- Form -->
+        <div class="row">
+            <div class="col s12 m5">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1551847677-dc82d764e1eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80" alt="">
+                    <span class="card-title">Contact Us</span>
+                  </div>
+                  <div class="card-content">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
+                      delectus?
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
+                      delectus?
+                    </p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
+                      delectus?
+                    </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col s12 m6 right">
+                <div class="card-panel grey lighten-3">
+                    <i class="material-icons large teal-text">email</i></a>
+                    <form>
+                        <div class="input-field">
+                            <textarea id="name" class="materialize-textarea" cols="20" rows="20"></textarea>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="email" id="email" class="materialize-textarea">
+                            <label for="email"> Email</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                            <label for="message">How can we help you?</label>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" class="datepicker">
+                            <label for="date">When?</label>
+                        </div>
+                        <div class="input-field center">
+                            <button class="btn teal">
+                                <i class="material-icons right white-text">send</i></a>
+                                Submit</button>
+                        </div>
+                    </form>                
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Map -->
+<section id="contact" class="section container center">
+    <h2 class="purple-text text-darken-3 center title">Locate Us</h2>
+    <div id="map" class="map"></div>
+</section>
+
+<!-- Footer -->
+<footer class="section purple lighten-1 white-text center">
+    <p class="flow-text">John Doe &copy; 2020</p>
+</footer>
+
+<!-- JavaScript script -->
+<script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.4.3/build/ol.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    // sideNav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+    // tabs
+    var tabs = document.querySelector('.tabs');
+    var instance = M.Tabs.init( tabs,{} );
+    // date
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.datepicker');
+    var instances = M.Datepicker.init(elems, {});
+  });
+     //maps
+  var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([-4.023590,39.856969]),
+          zoom: 12
+        })
+      });
+</script>
+</body>
+</html>
+

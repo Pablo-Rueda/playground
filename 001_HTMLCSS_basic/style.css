@@ -1,0 +1,233 @@
+#main{
+  position:fixed;
+  height: 100%; width: 100%;
+  top:0; left: 0;
+  background-image: url(https://images.unsplash.com/photo-1416592251798-377ad3ec7491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+ background-size: cover;
+ overflow:auto;
+}
+#header{
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  background:lightgrey;
+  height: 100%; width:200px;
+  left: 50px;
+  overflow: auto;
+  overflow-x: hidden;
+  text-align:center;
+  box-shadow:0px 0px 3px 1px;
+}
+#header-img{
+  position:relative;
+  height: 700px; width: 700px;
+  bottom:220px; right: 270px;
+  object-fit: expand;
+  
+}
+#nav-pic{ 
+  position:relative;
+  overflow: hidden;
+  border:solid white 1px;
+  border-radius: 50%;
+  height: 160px; min-height: 160px; max-height: 160px ;
+  width: 175px; 
+  margin-top:10px;
+  margin-right:10px;
+  margin-left:10px;
+box-shadow:0px 0px 10px 3px #fffdcf;
+}
+#welcome-section{
+  margin-left:250px;
+  text-align:center;
+  height: 100vh;
+  padding-top:5rem;}
+#nav-bar>ul{
+  text-align:center;
+  padding:0;
+}
+#nav-bar>ul>li {
+list-style: none;
+width:100%;
+padding:0; margin:0;
+}
+.nav-link {
+display: block;
+color:#404040;
+text-decoration: none;
+padding:7px 0 7px 0;
+font-size:20px;
+width:100%;
+height:100%;
+;
+font-family:"Lucida Console";
+}
+.nav-link:hover{ background-color:#b3b3b3
+
+;}
+h1,h2,h3{margin:2px;}
+h1{  font-size:46px;}
+#description{ font-size:16px;
+   padding-left: 100px;
+   padding-right: 100px;}
+#welcome-section>h1{font-size:84px;}
+#title{padding:24px;}
+#who{
+    margin:0;
+    min-height: 100vh;
+    padding-top:5px;
+    padding-bottom:50px;
+    background: rgba(50, 205, 255, 0.3);
+  text-align:center;
+}
+#body{
+  margin-top: 15px;
+  margin-left:250px;}
+#text{text-align:justify;}
+#img-div{
+  margin-top:15px;
+  text-align:center;
+}
+#image{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width:650px;
+    text-align:center;
+    margin:auto;
+    box-shadow:0px 0px 3px 1px;
+}
+
+#fight{padding-top:5px;
+    margin:0;
+    min-height: 100vh;
+    padding-bottom:50px;
+    background: rgba(0, 100, 255, 0.3);
+    text-align:center;}
+#video{
+  text-align:center;
+  margin-top:10px;
+  width: 720px;
+  height:486px;
+  box-shadow:0px 0px 3px 1px;
+}
+#survey{
+    padding-top:5px;
+    margin:0;
+    min-height: 100vh;
+    padding-bottom:50px;
+    background: rgba(0, 0, 150, 0.3);
+    text-align:center;
+}
+.box{
+    border-style: solid;
+    border-width:0px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px 1px; 
+    padding: 5px 5% 5px 5%;
+    margin: 5px 5%;
+    width:80%; heigth:100%;
+    background:white;
+    text-align:left;
+    font-family:Arial;
+}
+#survey-form{
+    margin:0;
+    padding:0;
+}
+.inp-box,textarea{width:100%;}
+.button{
+    text-align:center;
+    padding-bottom:15px;
+}
+
+@media (max-width: 950px) {
+    #video{
+    text-align:center;
+    width: 540px;
+    height:380px;
+    }
+}
+@media (max-width: 900px) {
+    #description{ font-size:16px;
+        padding-left: 50px;
+        padding-right: 50px;}
+    #welcome-section>h1{font-size:46px;}
+  }
+
+@media (max-width: 700px) {
+    #header{
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    background:lightgrey;
+    height: 80px; width:100%; min-width:300px;
+    left: 0px;
+    justify-content: space-around;
+    text-align:center;
+    box-shadow:0px 0px 3px 1px;
+    overflow: hidden;
+    }
+    #bar-content{ display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    
+    }
+    h2{ font-size:  21px;}
+    #header-img{
+    position:relative;
+    height: 400px; width: 400px;
+    bottom:135px; right: 170px;
+    object-fit: expand;
+    }
+    #nav-pic{ 
+    position:relative;
+    overflow: hidden;
+    border:solid white 1px;
+    border-radius: 50%;
+    height: 70px; min-height: 70px; max-height: 70px ;
+    width: 70px; min-width: 70px; max-width: 70px ;
+    margin-top:5px;
+    box-shadow:0px 0px 10px 3px #fffdcf;
+    } 
+    #nav-bar>ul{
+    text-align:center;
+    margin:0px;
+    padding:0;
+    }
+    #nav-bar>ul>li {
+    list-style: none;
+    padding-top:0px;
+    }
+    #nav-bar>ul>li>a {
+    font-size:15px;
+    }
+    .nav-link {
+    display: block;
+    color:#404040;
+    text-decoration: none;
+    padding:1.25px;
+    margin:0;
+    font-size:20px;
+    width:100%;
+    height:100%;
+    border-left: solid 1px;
+    border-right:solid 1px;
+    font-family:"Lucida Console";
+    }
+    #welcome-section{
+    margin-left:0px;
+    margin-top:75px;
+    text-align:center;
+    height: 100vh;
+    padding:3rem;}
+    #body{
+    margin-top: 5%;
+    margin-left:0px;}
+    #video{
+    text-align:center;
+    width: 320px;
+    height:180px;
+    box-shadow:0px 0px 3px 1px;
+    }
+}

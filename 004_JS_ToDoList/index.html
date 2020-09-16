@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+        <title>To do list</title>
+      </head>
+<header>
+    <nav class="nav-wrapper">
+    </nav>
+</header>
+<style>
+    .collection-item{
+        min-height: 65px;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <h1 class="center">To do list</h1>
+        <h3>Tasks Completed: <span id="tasksComplete">0</span></a></h3>
+        <form>
+            <div class="input-field">
+                <i class="material-icons prefix">article</i>
+                <textarea id="text" class="materialize-textarea" cols="20" rows="20"></textarea>
+                <a href="#" class="btn" onclick="addItem()"> Send <i class="material-icons right"> send</i></a>
+                <a href="#" class="btn" onclick="reset()"> Reset <i class="material-icons right"> settings_backup_restore</i></a>
+
+            </div>
+        </form>
+        <ul id="list" class="collection">            
+
+        </ul>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

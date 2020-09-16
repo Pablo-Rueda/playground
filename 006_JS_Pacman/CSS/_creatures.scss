@@ -1,0 +1,16 @@
+.ghost{
+    background-color: lightseagreen;
+    border:1px solid lightgrey;
+    border-radius: 50% 50% 0% 0%;
+}
+
+.pacman{
+    display: block;
+    background: yellow;
+    border:1px solid lightgrey;
+    border-radius: 50%;
+    /*
+    height: ($tableSize/$nCells)-($tableSize/$nCells)/10;
+    width:($tableSize/$nCells)-($tableSize/$nCells)/10; 
+    */
+}

@@ -1,0 +1,124 @@
+body {
+  left: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.playBoard {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 500px;
+  width: 1000px;
+  display: -ms-grid;
+  display: grid;
+  background-color: lightcoral;
+  -ms-grid-columns: (1fr)[24];
+      grid-template-columns: repeat(24, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  border: 2px solid blue;
+}
+
+/* cells */
+.boardCell {
+  background-color: lightcoral;
+  z-index: 1;
+}
+
+.pointsCell {
+  background-color: white;
+  border-radius: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: 20%;
+  width: 20%;
+  z-index: 1;
+}
+
+/* Base cells */
+.wall {
+  background-color: lightslategrey;
+  z-index: 2;
+}
+
+.ghostLair {
+  background-color: lightcoral;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .playBoard {
+    height: 375px;
+    width: 750px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .playBoard {
+    height: 250px;
+    width: 500px;
+  }
+}
+
+.ghost {
+  background-color: lightseagreen;
+  border: 1px solid lightgrey;
+  border-radius: 50% 50% 0% 0%;
+}
+
+.pacman {
+  display: block;
+  background: yellow;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  /*
+    height: ($tableSize/$nCells)-($tableSize/$nCells)/10;
+    width:($tableSize/$nCells)-($tableSize/$nCells)/10; 
+    */
+}
+
+.message {
+  position: absolute;
+  z-index: 9;
+  padding: 50%;
+  font-size: 72px;
+  padding: 50px 100px;
+  color: white;
+  text-shadow: 1px 1px black;
+  border: 1px solid black;
+  border-radius: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#win {
+  display: none;
+}
+
+#lose {
+  display: none;
+}
+
+#stop {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

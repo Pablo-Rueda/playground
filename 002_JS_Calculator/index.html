@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <h1> Vanilla JS Calculator </h1>
+      <div id="container">        
+        <div id="output" class="block output black">0</div>
+                <div class="block two-col red button" onclick="reset()">AC</div>
+        <div class="block grey button" onclick="changeOutput('/')">/</div>
+        <div class="block grey button" onclick="changeOutput('*')">x</div>
+        <div class="block dark button"  onclick="changeOutput(7)">7</div>
+        <div class="block dark button" onclick="changeOutput(8)">8</div>
+        <div class="block dark button" onclick="changeOutput(9)">9</div>
+        <div class="block grey button" onclick="changeOutput('-')">-</div>
+        <div class="block dark button" onclick="changeOutput(4)">4</div>
+        <div class="block dark button" onclick="changeOutput(5)">5</div>
+        <div class="block dark button" onclick="changeOutput(6)">6</div>
+        <div class="block grey button" onclick="changeOutput('+')">+</div>
+        <div class="block dark button" onclick="changeOutput(1)">1</div>
+        <div class="block dark button" onclick="changeOutput(2)">2</div>
+        <div class="block dark button" onclick="changeOutput(3)">3</div>
+        <div class="block two-row grey button" onclick="calculate('')">=</div>
+        <div class="block dark two-col button" onclick="changeOutput(0)">0</div>
+        <div class="block grey button" onclick="changeOutput('.')">.</div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+  </HTML>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <header>
+        <nav class="nav-extended teal lighten-3">
+        <div class="nav-wrapper">
+            <div class="container">
+                <a class="brand-logo left  hide-on-small-only">Score: <span id="points">0</span></a>
+                <a class="brand-logo center grey-text text-darken-3 hide-on-med-and-down">Pacman</a>
+                <ul class="right">
+                    <li><a id="play" class=" btn deep-purple lighten-2" onclick="game.play()">Play
+                        <i class="material-icons right">play_arrow</i>
+                    </a></li>
+                    <li><a id="pause" onclick="game.pause()" class=" btn deep-purple lighten-2">Pause 
+                        <i class="material-icons right">stop</i>
+                    </a></li>
+                    <li><a id="reset" onclick="game.reset()" class=" btn deep-purple lighten-2">Reset 
+                        <i class="material-icons right">settings_backup_restore</i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav-content hide-on-med-and-up">
+            <ul class="tabs tabs-trasparent teal lighten-3">
+                    <a class="brand-logo grey-text text-darken-3 center">Score: <span id="points">0</span></a>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <body>
+
+        <div class="main">
+            <div id="playBoard" class="playBoard"></div>
+            <div id="stop" class="message teal lighten-3"> On Pause</div>
+            <div id="win" class="message teal lighten-2"> You Win!</div>
+            <div id="lose" class="message teal lighten-2"> Game Over!</div>
+        </div>
+
+        <div class="container hide-on-med-and-up">
+            <div class="row center">
+                <div class=" btn-large deep-purple lighten-2 " onclick="pacman.setMoveDirection(1)">
+                    <i class="material-icons right">keyboard_arrow_up</i>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="container">
+                    <button class="col s3 btn-large deep-purple lighten-2 left" onclick="pacman.setMoveDirection(3)">
+                        <i class="material-icons right">keyboard_arrow_left</i>
+                    </button>
+                    <button class="col s3 btn-large deep-purple lighten-2 right" onclick="pacman.setMoveDirection(4)">
+                        <i class="material-icons right">keyboard_arrow_right</i>
+                    </button>
+                </div>
+            </div>
+            <div class="row center">
+                <div class=" btn-large deep-purple lighten-2" onclick="pacman.setMoveDirection(2)">
+                    <i class="material-icons right">keyboard_arrow_down</i>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+    </body>
+</html>

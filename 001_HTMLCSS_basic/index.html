@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Emperor Penguin </title>
+    <meta charset="utf-8">
+    <meta name="description" content="Just a simple 'emperor penguin' practice project.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+    <main id="main">
+    <header id="header"> 
+      <div id="bar-content">
+         <div> <h2>The<br>Emperor<br> Penguin </h2></div>
+         <div id="nav-pic"> 
+         <img id="header-img" src="https://e360.yale.edu/assets/site/EmperorPenguins_11278870305_f6ea2ae166_o_ChristopherMichelFlickr.jpg" alt="">
+         </div>
+         <nav id="nav-bar"><ul>
+            <li><a class="nav-link" href="#welcome-section">Home</a></li>
+           <li><a class="nav-link" href="#who">Curiosities</a></li>
+           <li><a class="nav-link" href="#fight">Video</a></li>
+           <li><a class="nav-link" href="#survey">  Survey</a></li>
+  
+  
+         </ul></nav>
+     </div>
+    </header>
+      <section id="welcome-section">
+        <h1 id="title"> Life at the Arctic: Emperor Penguin</h1>
+     </section>
+      <div id="tribute-info">
+        <section id="who">
+          <div id="body">
+              <h1>The penguin</h1>
+           <div id="text">
+             <div id="img-div"><img id="image" src="https://cff2.earth.com/uploads/2019/05/03180449/Emperor-penguin-colonies-are-collapsing-due-to-climate-change-730x410.jpg" alt="">
+               <figcaption id="img-caption"> Emperor penguin and a chicks following it</figcaption>
+             </div>
+              <p id="description"> The emperor penguin is the biggest penguin in the world. It lives in the Antartic. Chicks emperor penguins are grey, with some black and white parts surrounding their faces. The adults become black, with a white belly and some yellow parts around their necks.
+                <br><br>According to <a href="https://en.wikipedia.org/wiki/Emperor_penguin" id="tribute-link" target="_blank"> Wikipedia</a>, the emperor penguin is only penguin species that breeds during the Antarctic winter, emperor penguins trek 50–120 km (31–75 mi) over the ice to breeding colonies which can contain up to several thousand individuals. The female lays a single egg, which is incubated for just over two months by the male while the female returns to the sea to feed; parents subsequently take turns foraging at sea and caring for their chick in the colony. The lifespan is typically 20 years in the wild, although observations suggest that some individuals may live to 50 years of age. </p>
+          </div>
+        </section>
+        <section id="fight">
+          <div id="body">
+            <h1>The fight</h1>
+            <iframe id="video" src="https://www.youtube.com/embed/Z7PlUGbsXlQ"></iframe>
+            </div>
+        </section>
+        <section id="survey"> <div id="body">
+            <h1>The survey</h1>
+          <p id="description"> Let's see how much do you know about penguins!</p>
+            <div class="box">
+             <form id="survey-form">
+             <div><p> <label id="name-label"> Name </label> 
+              <input type="text" name="name" class="inp-box" id="name" placeholder="Please, enter your name" required ></p></div>
+             <div><p> <label id="email-label"> Email </label> 
+             <input type="email" name="email" class="inp-box" id="email" placeholder="Please, enter your email" required></p></div>
+             <div><p> <label  id="number-label"> What is the max distance (in KM) an emperor penguin can walk to meet a breeding colony?  </label> 
+             <input type="number" type="range" name="number" class="inp-box" id="number" min="0" max="100" placeholder="Walking distance (km)" required ></p></div>
+             <div>
+               <p> <label  id="number-dropdown"> How does the emperor penguin chicks defense themselves when an enemy comes? </label> 
+               <select id="dropdown" class="inp-box">
+                  <option value="Option 1">They attack first to their enemies</option>
+                  <option value="Option 2">They run and leave away the weak chicks</option>
+                  <option value="Option 3">They form a defensive circle</option>
+                  <option value="Option 4">None of the previous options</option>
+                </select></p>
+             </div>
+               
+             <div>
+                <label  id="radio-options"><p>Who are good friends of the emperor chicks? </br></label>
+                <label for="yes"><input id="yes" type="radio" name="radio-buttons" value="indoor" checked> The adelies</br> </label>
+                <label for="No"><input id="No" type="radio" name="radio-buttons" value="indoor" checked> The petrels </br> </label>
+                <label for="Maybe"><input id="Maybe" type="radio" name="radio-buttons" value="indoor" checked> The leopard seals </br> </label></p>
+             </div>
+      
+             <div>
+               <label  id="checkbox-label"><p>Which colors can an emperor penguin have? </br></label> 
+               <label for="White"><input id="White" type="checkbox" name="color" value="Skinner"> White</label><br>
+      <label for="Yellow"><input id="Yellow" type="checkbox" name="color" value="Yellow"> Yellow</label><br>
+      <label for="Brown"><input id="Brown" type="checkbox" name="color" value="Brown"> Brown</label><br>
+      <label for="Grey"><input id="Grey" type="checkbox" name="color" value="Grey"> Grey</label><br>
+      <label for="Blue"><input id="Blue" type="checkbox" name="color" value="Blue"> Blue</label><br>
+      <label for="Purple"><input id="Purple" type="checkbox" name="color" value="Purple"> Purple</label>     
+              </div>
+    
+              <div>
+                <label  id="checkbox-label"><p> Please, share what do you think about penguins: </br></label> 
+                <textarea rows="4">
+  e.g. They are super cute, they are cool, etc.
+  </textarea>
+              </div>
+    
+             <div class="button"><button id="submit" type="submit">Submit</button></div>
+            </form>
+            </div>
+        </div></section>
+      </div>
+  </main>
+</body>
+</html>

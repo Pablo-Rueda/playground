@@ -1,0 +1,21 @@
+.message{
+    position: absolute;
+    z-index: 9;
+    padding: 50%;
+    font-size: 72px;
+    padding: 50px 100px;
+    color:white;
+    text-shadow: 1px 1px black;
+    border:1px solid black;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+#win{
+    display: none;
+}
+#lose{
+    display: none;
+}
+#stop{
+    display: block;
+}
