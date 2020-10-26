@@ -4,25 +4,29 @@ This is a track of my personal improvement rather than a selection of my best pr
    
 ## RMarkdown Data Wranpling:      
 My very first project. After learning how to code at my MSc in Statistics, I used my knowledge in R creating a simple web for a data wrangpling project:  
-https://peivol-dot-r.github.io/playground/000_RMarkdown_DataWrangpling  
+https://Pablo-Rueda.github.io/playground/000_RMarkdown_DataWrangpling  
 
 ## HTML/CSS Penguin Emperor:      
 First pure web development project. When I started learning web development (with Free Code Camp), I created this project to practise with HTML and CSS:  
-https://peivol-dot-r.github.io/playground/001_HTMLCSS_basic   
+https://Pablo-Rueda.github.io/playground/001_HTMLCSS_basic   
   
 ## Basic JS:  
 After learning the fundamentals of JavaScript, I started building some basic practise projects without getting worried about the visual part:   
 ### Calculator:    
-https://peivol-dot-r.github.io/playground/002_JS_Calculator    
+https://Pablo-Rueda.github.io/playground/002_JS_Calculator    
 ### Pomodoro CountDown Clock:    
-https://peivol-dot-r.github.io/playground/003_JS_Pomodoro   
+https://Pablo-Rueda.github.io/playground/003_JS_Pomodoro   
 ### To Do List:     
-https://peivol-dot-r.github.io/playground/004_JS_ToDoList    
+https://Pablo-Rueda.github.io/playground/004_JS_ToDoList    
 
 ## Materialize Web page:   
 To improve my efficiency with web design, I learnt materialize framework:   
-https://peivol-dot-r.github.io/playground/005_HTMLCSS_MaterializeProject    
+https://Pablo-Rueda.github.io/playground/005_HTMLCSS_MaterializeProject    
 
 ## Pacman:   
 I combined all previous knowledge building a Pacman APP. Also, it gave me a project to improve with OOP:    
-https://peivol-dot-r.github.io/playground/006_JS_Pacman     
+https://Pablo-Rueda.github.io/playground/006_JS_Pacman     
+
+## First-portfolio:   
+First version of my portfolio:    
+https://Pablo-Rueda.github.io/playground/007_FirstPortfolio     

@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Rueda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+        .main-margin{
+            margin-top:75px;
+        }
+        section{
+            overflow: auto;
+        }
+        section .flex-row{ 
+                margin:25px;
+            }
+        @media screen and (max-width: 750px) {
+            .flex-row{
+                flex-direction: column;
+            }
+            section .flex-row{ 
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .ver-nav-content{
+                display:none;
+            }
+            .main-margin{
+            margin-top:50px;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Horizontal Navigation for big screens-->
+        <nav id="sideNavBar" class="nav-wrapper-horizontal left navColor">
+            <a href="javascript:void(0)" class="closebtn" onclick="navBar.closeNav()">&times;</a>
+           <div class="container flex-col">
+            <img class="navImg" src="Images/nav_image.png" alt="Pablo Rueda">
+            <h1>PABLO RUEDA</h1>
+            <ul>
+                <li><a href="index.html">MAIN</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="Pablo Rueda CV.pdf" target="_blank">MY CV
+                    <i class="fas fa-file-download"></i>
+                </a></li>
+            </ul>
+            <h2>CONTACT</h2>
+            <div class="inner-nav-inline">
+              <a href="mailto: pablors-j@hotmail.com"><i class="fas fa-envelope small-icon"></i></a>
+              <a href="https://www.linkedin.com/in/pabloruedas/en" target="_blank"><i class="fab fa-linkedin small-icon"></i></a>
+              <a href="https://github.com/peivol-dot-r" target="_blank"><i class="fab fa-github small-icon"></i></a>
+            </div>
+           </div> 
+        </nav>
+        <!-- Vertical Navigation for small screens-->
+        <nav id="sideNavBar" class="nav-wrapper-vertical top navColor">
+           <div  class="flex-row container">
+            <h1>PABLO RUEDA</h1>
+            <a href="javascript:void(0)" class="hmbg-button" onclick="navBar.expand()">
+            <i class="fa fa-bars"></i>
+             </a>
+            <ul class="ver-nav-content">
+                <li><a href="index.html">MAIN</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="Pablo Rueda CV.pdf" target="_blank">MY CV
+                    <i class="fas fa-file-download"></i>
+                </a></li>
+            </ul>
+            <div class="inner-nav-inline ver-nav-content">
+              <a href="#"><i class="fas fa-envelope small-icon"></i></a>
+              <a href="https://www.linkedin.com/in/pabloruedas/en" target="_blank"><i class="fab fa-linkedin small-icon"></i></a>
+              <a href="https://github.com/peivol-dot-r" target="_blank"><i class="fab fa-github small-icon"></i></a>
+            </div>
+
+           </div>
+        </nav>
+    </header>
+    <span id="openArrow" onclick="navBar.openNav()">
+    <p><i class="fas fa-chevron-right"></i></p>
+    </span>
+    <!-- End of Nav element-->
+    <!-- Initial portfolio screen -->
+    <section id="main">
+      <div class="container use-horizontal-nav">
+        <div class="flex-row main-margin">
+          <div class="flex-col ">
+            <h1 class="title center">Portfolio</h1>
+            <a href="#divisor" class="title center arrow"><i class="fas fa-chevron-down"></i></a>
+          </div>
+        </div>
+      </div>
+  </section>
+ 
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+.nav-wrapper-vertical{
+    display:none;
+    position: fixed;
+    z-index: 2;
+    right:0px;
+    height: 50px; 
+    width: 100%; 
+    box-shadow:0px 0px 3px 1px black;
+    overflow: hidden;
+    h1,h2,h3,h4,h5,p{
+        margin:11px;
+        font-family:'Roboto', sans-serif;
+        align-self: center;
+        font-style: normal;
+        font-weight: normal;
+    }
+    h1{
+        color:white;
+    }
+    h2{
+        color:white;
+    }
+    .navImg{
+        display:none;
+    }
+    ul{
+        margin:0px;
+        padding: 11px  0px ;
+        vertical-align: middle;
+        height: 100%;
+        li{
+            display: inline;
+            padding: 10px;
+            font-size:24px;
+            color:$primaryLinkColor;
+        }
+        li:hover{
+            color:$hoverLinkColor;
+            text-decoration: underline;
+            cursor:pointer;
+        };
+    }
+    .inner-nav-inline{ 
+        align-self: center;
+        a{
+          display: inline;
+          padding: 5px;
+          margin: 0px;
+          color:$primaryLinkColor;
+        }
+        a:hover{
+            color:$hoverLinkColor;
+        };
+      }
+}
+
+.nav-wrapper-horizontal{
+    position: fixed;
+    z-index: 2;
+    top:0px;
+    height: 100%; 
+    width: 250px;
+    overflow: hidden;
+    box-shadow:0px 0px 3px 1px black;
+    align-self: center;
+    .container{
+        min-width: 250px;
+    }
+    .closebtn {/*Buttons*/
+        position: absolute;
+        color:$primaryLinkColor;
+        top: 0;
+        right: 25px;
+        font-size: 46px;
+        margin-left: 50px;
+      }
+    .navImg{
+        padding:50px 0px 25px;
+        align-self: center;
+        height: 150px;
+        width: 150px;
+    }
+    h1,h2,h3,h4,h5,p{
+        font-family:'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        margin:0px;
+    }
+    h1{
+        text-align: center;
+        font-size: 32px;
+        color:white;
+    }
+    h2{
+        padding-top: 10px;
+        padding-left:24px;       
+        font-size:24px;
+        margin:0px;
+        color:$primaryLinkColor;
+    }
+    ul{ 
+        margin: 0px;
+        padding-top: 10px;
+        padding-left:24px;
+        width: 100%;
+        li{
+            padding:5px 0px;
+            font-size:24px;
+            color:$primaryLinkColor;
+        }
+        li:hover{
+            color:$hoverLinkColor;
+        };
+        li:hover:after{
+            content: "\2022";
+            margin-left: 8px;
+            color:$hoverLinkColor;
+        };
+    }
+    .inner-nav-inline{ 
+        text-align: left;
+        padding-top: 10px;
+        padding-left:16px;
+        a{
+          display: inline;
+          padding: 5px;
+          margin: 0px;
+          color:$primaryLinkColor;
+        }
+        a:hover{
+            color:$hoverLinkColor;
+        };
+      }
+}
+
+.navColor{
+    background-color:rgba($primaryColor,0.8);
+}
+.use-horizontal-nav{
+    margin-left:300px;
+    width:65%;
+}
+#openArrow{
+    position: fixed;
+    color:$primaryColor;
+    left: -30px;
+    top:40%;
+    cursor: pointer;
+    z-index: 3;
+    text-shadow: 1px 1px 1px black;
+    p{
+        font-size: 48px;
+    }
+  }
+#openArrow:hover{
+    color:$secondaryColor;
+}
+.hmbg-button{
+display:none;
+}
+
+@media screen and (max-width: 1066px) {
+    .nav-wrapper-vertical{
+        display:block;
+    }
+    .nav-wrapper-horizontal{
+        display:none;
+    }
+    .use-horizontal-nav{
+        margin-left:25px;
+        width:90%;
+    }
+    #openArrow{
+        display:none;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+     .hmbg-button{
+        display:block;
+        position: fixed;
+        color: white;
+        font-size: 25px;
+    }
+    .nav-wrapper-horizontal{
+        display:none;
+        top:50px;
+        width: 250px;
+        background-color:rgba($primaryColor,1);
+        h1{
+            display:none;
+        }
+        .closebtn{
+            display:none;
+        }
+        .navImg{ 
+            display:none;
+        }
+    }
+ }
+.expand{
+    display:block;
+ }

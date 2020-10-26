@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Rueda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+
+        #Skills{
+            display:none;
+        }
+
+        @media screen and (max-width: 750px) {
+            #main{
+                padding-bottom: 100px;
+                overflow: hidden;
+            }
+            #project-section{
+                padding-top: 50px;
+            }
+            .flex-row{ 
+                flex-direction: column;
+            }
+            .ver-nav-content{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Horizontal Navigation for big screens-->
+        <nav id="sideNavBar" class="nav-wrapper-horizontal left navColor">
+            <a href="javascript:void(0)" class="closebtn" onclick="navBar.closeNav()">&times;</a>
+           <div class="container flex-col">
+            <img class="navImg" src="Images/nav_image.png" alt="Pablo Rueda">
+            <h1>PABLO RUEDA</h1>
+            <ul>
+                <li><a href="#main">MAIN</a></li>
+                <li><a href="#project-section">PORTFOLIO</a></li>
+                <li><a href="Pablo Rueda CV.pdf" target="_blank">MY CV
+                    <i class="fas fa-file-download"></i>
+                </a></li>
+            </ul>
+            <h2>CONTACT</h2>
+            <div class="inner-nav-inline">
+              <a href="mailto: pablors-j@hotmail.com"><i class="fas fa-envelope small-icon"></i></a>
+              <a href="https://www.linkedin.com/in/pabloruedas/en" target="_blank"><i class="fab fa-linkedin small-icon"></i></a>
+              <a href="https://github.com/peivol-dot-r" target="_blank"><i class="fab fa-github small-icon"></i></a>
+            </div>
+           </div> 
+        </nav>
+        <!-- Vertical Navigation for small screens-->
+        <nav id="sideNavBar" class="nav-wrapper-vertical top navColor">
+           <div  class="flex-row container">
+            <h1>PABLO RUEDA</h1>
+            <a href="javascript:void(0)" class="hmbg-button" onclick="navBar.expand()">
+            <i class="fa fa-bars"></i>
+             </a>
+            <ul class="ver-nav-content">
+                <li><a href="#main">MAIN</a></li>
+                <li><a href="#project-section">PORTFOLIO</a></li>
+                <li><a href="Pablo Rueda CV.pdf" target="_blank">MY CV
+                    <i class="fas fa-file-download"></i>
+                </a></li>
+            </ul>
+            <div class="inner-nav-inline ver-nav-content">
+              <a href="#"><i class="fas fa-envelope small-icon"></i></a>
+              <a href="https://www.linkedin.com/in/pabloruedas/en" target="_blank"><i class="fab fa-linkedin small-icon"></i></a>
+              <a href="https://github.com/peivol-dot-r" target="_blank"><i class="fab fa-github small-icon"></i></a>
+            </div>
+
+           </div>
+        </nav>
+    </header>
+    <span id="openArrow" onclick="navBar.openNav()">
+    <p><i class="fas fa-chevron-right"></i></p>
+    </span>
+    <!-- End of Nav element / Start main section -->
+    <section id="main">
+        <div class="flex-col container use-horizontal-nav">
+            <div class="flex-row main-margin">     <!-- column distributed -->
+                <div class="col"> 
+                    <h1 class="title"> Pablo Rueda</h1>
+                    <h2 class="sub-title"> Web Developer</h2>
+                    <p class="main-text"> "To die like Icarus is better than living without making an effort 
+                        to fly, even if it was with wax wings. Rise, rise up then so you will sprout wings, 
+                        because if you want to fly, they will sprout."</br> 
+                    <i>- Miguel de Unamuno </i></p>
+                </div>
+                <div class="col">
+                    <div class="text-wrapper flex-col">
+                        <div id="About" class="tab">
+                            <p> Hi, I'm Pablo, a Data Analyst and self-taught developer. </br> 
+                                I enjoy learning new things and applying what I learn in 
+                                new projects. If you would like to work with me, or simply
+                                you have a good project idea, please contact me!</p>
+                        </div>
+                        <div id="Skills" class="tab">
+                            <p > Right now, I'm in process of learning React (JS),
+                                Python and SQL while I'm working in some personal projects. Below are the
+                                technologies that I command:</p>
+                                <p class="hide-on-small">
+                                    <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+                                    <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+                                    <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+                                    <i class="fab fa-r-project mid-icon" style="color:#3366ff;"></i>
+                                    <i class="fab fa-sass mid-icon" style="color:#f859bb;"></i>
+                                    <i class="fab fa-react mid-icon" style="color:#3366ff;"></i>
+                                </p>
+                                <p class="display-on-small">
+                                    <i class="fab fa-html5 small-icon" style="color:#3366ff;"></i>
+                                    <i class="fab fa-css3-alt small-icon" style="color:#e65c00;"></i>
+                                    <i class="fab fa-js small-icon" style="color:#cccc00;"></i>
+                                    <i class="fab fa-r-project small-icon" style="color:#3366ff;"></i>
+                                    <i class="fab fa-sass small-icon" style="color:#f859bb;"></i>
+                                    <i class="fab fa-react small-icon" style="color:#3366ff;"></i>
+                                </p>
+                        </div>
+                        <div class="center lower">
+                            <button class="btn active" onclick="showTab(event,'About')"> About Me </button>
+                            <button class="btn" onclick="showTab(event,'Skills')"> Skills </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- divisor -->
+ <div id="divisor" class="divisor"> </div>
+ <!-- Projects section -->
+ <section id="project-section">
+   <div class="container use-horizontal-nav">
+     <!-- First row of projects-->
+     <div class="flex-row">
+        <div class="flex-col project-content">
+           <h1 class="center">React Web App</h1>
+           <a  class="center" href="https://5f7f90bac946db00ea33da57--fitness-plus.netlify.app/" target="_blank"><img class="proj-img" src="Images/FitnessPlus.PNG" alt=""></a>
+           <div class="proj-text center">
+             <p> React web App created to track users sport performance throught different rounds.
+               It was created using React, Javascript, SASS, CSS and HTML.</br>
+               <a class="blue" href="https://github.com/peivol-dot-r/Fitness-plus"> Script <i class="fab fa-github"></i></a> 
+             </p>
+                <p>
+                  <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+                  <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+                  <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+                  <i class="fab fa-react mid-icon" style="color:#3366ff;"></i>
+                </p>
+           </div>
+        </div>
+        <div class="flex-col project-content">
+           <h1 class="center">Pacman Game </h1>
+           <a  class="center" href="https://peivol-dot-r.github.io/pacman/" target="_blank"><img class="proj-img" src="Images/pacman.PNG" alt=""></a>
+           <div class="proj-text center">
+             <p>Front-end Pacman game to practise applying the OOP principles. It was build using HTML, CSS (+ SASS) and vanilla Javascript. </br>
+               <a class="blue" href="https://github.com/peivol-dot-r/pacman"> Script <i class="fab fa-github"></i></a>
+             </p>
+             <p>
+               <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+               <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+               <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+               <i class="fab fa-sass mid-icon" style="color:#f859bb;"></i>
+             </p>
+           </div>
+         </div>
+     </div> 
+       <!-- Second row of projects-->
+       <div class="flex-row">
+        <div class="flex-col project-content">
+           <h1 class="center">Materialize webpage</h1>
+           <a  class="center" href="https://peivol-dot-r.github.io/Psychology-Materialize-page/" target="_blank"><img class="proj-img" src="Images/psychology.PNG" alt=""></a>
+           <div class="proj-text center">
+             <p> Practise website designed using HTML, Materialize framework, CSS and Javascript.</br>
+               <a class="blue" href="https://github.com/peivol-dot-r/Psychology-Materialize-page"> Script <i class="fab fa-github"></i></a> 
+             </p>
+                <p>
+                  <i class="fab fa-html5 mid-icon" style="color:#3366ff;"></i>
+                  <i class="fab fa-css3-alt mid-icon" style="color:#e65c00;"></i>
+                  <i class="fab fa-js mid-icon" style="color:#cccc00;"></i>
+                </p>
+           </div>
+        </div>
+        <div class="flex-col project-content">
+            <h1 class="center">Data Wrangling</h1>
+            <a class="center" href="https://peivol-dot-r.github.io/SteamGames2020/" target="_blank"><img class="proj-img" src="Images/SteamGames.PNG" alt=""></a>
+            <div class="center proj-text">
+              <p>Data Wrangling project using R. The project was tracked using Rmarkdown. </br>
+                <a class="blue" href="https://github.com/peivol-dot-r/SteamGames2020"> Script <i class="fab fa-github"></i></a>  </p>
+              <p>
+                <i class="fab fa-r-project mid-icon" style="color:#3366ff;"></i>
+              </p>
+            </div>
+         </div>
+     </div> 
+
+ </section>
+ <div id="divisor" class="divisor"> </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
